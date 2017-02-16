@@ -1,0 +1,39 @@
+<span id="PG" data-pg="case"></span>
+<div class="case-banner-box">
+    <div class="c-row">
+        <h2 class="banner-title" data-aos="flip-right" data-aos-once="true" data-aos-duration="1000">
+            他们正在使用辰森软件
+        </h2>
+        <p class="small-title" data-aos="flip-left" data-aos-once="true" data-aos-duration="700" data-aos-delay="300">- 我们期待您的加入 -</p>
+    </div>
+</div>
+<div class="case-list-box c-row">
+    <div class="hr">
+        <h3 class="list-title">
+            客户案例 CUSTOMERS
+        </h3>
+    </div>
+    <ul class="case-list cf">
+        {{each caseLists}}
+            <li class="customer-box" data-aos="fade-up" data-aos-once="true" data-aos-duration="700" data-aos-delay="{{($index%3)*100}}">
+                <div class="customer-brand cf">
+                    <div class="cus-logo"><img class="l" src="{{$value.img}}" alt="{{$value.name}}"></div>
+                    <h5 class="cus-name {{if $value.s}}s{{/if}}">{{$value.name}}</h5>
+                </div>
+                <div class="cus-use">
+                    <div class="ind-state">
+                        <span class="sec-t">业态</span>
+                        <span class="content">{{$value.yt}}</span>
+                    </div>
+                    <div class="ind-state">
+                        <span class="sec-t">功能应用</span>
+                        <span class="content">{{$value.app}}</span>
+                    </div>
+                </div>
+                <div class="cus-content">
+                    {{$value.content}}
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+</div>

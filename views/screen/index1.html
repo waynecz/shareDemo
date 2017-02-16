@@ -1,0 +1,79 @@
+<span id="PG" data-pg="index"></span>
+<!-- banner-->
+<div class="index-banner-box">
+    <div id="owl" class="owl-carousel owl-theme">
+        {{each carouselLists}}
+        <div class="carousel-item">
+            <a class="ca" href="{{$value.href}}">
+                <img class="carousel-img" src="{{$value.img}}" alt="{{$value.alt}}">
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<!-- case-->
+<div class="index-solution-box">
+    <h3 class="solution-title section-title ta-c">产品及服务</h3>
+    <p class="small-title">
+        productions & services
+    </p>
+    <div class="list-wrap">
+        <ul class="solution-list cf" id="solutionList">
+            {{each solutionLists}}
+            <li class="solution-item inb-tac {{if $index == 4}}active{{/if}}" data-index="{{$index + 1}}">
+                <div class="solution-card">
+                    <div class="icon icon-{{$index + 1}}"></div>
+                    <h5 class="card-name">{{#$value.name}}</h5>
+                    <a class="card-button" href="{{$value.href}}">查看详情</a>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+
+</div>
+<!-- news-->
+<div class="index-trend-box">
+    <h3 class="trend-title section-title ta-c">新闻动态</h3>
+    <p class="small-title">
+        news
+    </p>
+    <div class="c-row">
+        <ul class="trend-list cf">
+            {{each newsList}}
+            <li class="trend-item fl" data-aos="fade-up" data-aos-duration="{{(($index+2)/9+1) * 1400}}" data-aos-delay="{{$index * 200}}" data-aos-once="true">
+                <div class="news-img news-img-{{$index + 1}}"></div>
+                <div class="news-box">
+                    <div class="news-time d-ib v-t">
+                        <p class="time-y">{{$value.d}}</p>
+                        <p class="time-d">{{$value.y}}</p>
+                    </div>
+                    <div class="news-abstract d-ib v-t">
+                        <h4><a class="news-title" href="/news/{{$value.title}}">{{$value.title}}</a></h4>
+                        <p class="news-content">{{#$value.content}}</p>
+                        <a href="/news/{{$value.title}}"><span class="etc">>></span></a>
+                    </div>
+                </div>
+
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<!-- partners-->
+<div class="index-partner-box">
+    <h3 class="partner-title section-title ta-c">优秀合作伙伴</h3>
+    <p class="small-title">
+        excellent partners
+    </p>
+    <ul class="c-row partner-list cf">
+        {{each partnerLists}}
+        <li class="partner-item fl"  data-aos="zoom-in-up"  data-aos-duration="1000" data-aos-delay="{{$index * 50}}" data-aos-once="true">
+            <a href="javascript:void(0)" class="partner-link">
+                <img class="p" src="slice/{{$value.href}}.png" alt="">
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</div>

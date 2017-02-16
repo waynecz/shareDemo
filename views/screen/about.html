@@ -1,0 +1,74 @@
+<span id="PG" data-pg="about"></span>
+<div class="about-banner-box">
+    <d class="c-row">
+        <img src="imgs/about-slogan.png" alt="" class="slogan" data-aos="fade-down" data-aos-once="true">
+    </d>
+</div>
+
+<div id="ASB" class="about-subnav-box">
+    <div class="wrap">
+        <div class="c-row s cf p-r">
+            <div class="subnav-unit"><a href="/about#I">企业简介</a></div>
+            <div class="subnav-unit"><a href="/about#honour">企业荣誉</a></div>
+            <div class="subnav-unit"><a href="/about#milestone">企业大事记</a></div>
+            <div class="subnav-unit"><a href="/about#B">联系我们</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="about-intro-box c-row s" id="I">
+    <img src="imgs/intro-slogan.png" alt="" class="intro-slogan">
+    <div class="intro-content"  data-aos="zoom-out" data-aos-once="true" data-aos-duration="700">
+        <p>
+            北京辰森世纪科技股份有限公司，始创于1995年，是中国最具影响力的餐饮行业信息技术及云服务提供商。在全国八大区域设有技术与服务分支机构，汇聚数百名高精尖计算机专家及连锁管理服务人员，专注于行业信息化IT技术研发与创新，致力于中国连锁餐饮信息系统专业服务。</p>
+        <p>每一天，在中国300多座城市，8000多家餐饮品牌企业，4万多家门店都在使用辰森世纪的系统服务！</p>
+        <p>1998年，辰森世纪率先将移动手持POS机技术和条码技术巧妙导入并应用于餐饮行业，一举革新了餐饮门店信息化运营模式，同时奠定了辰森世纪在行业信息化终端应用的领导地位。</p>
+        <p>2008年，辰森世纪确立了由行业信息化技术应用转向企业内部信息化应用的技术战略布局、通过互联网技术应用实现企业内外部资源高效配置及运营。</p>
+        <p>
+            2013年，辰森与用友软件达成战略合作伙伴关系，双方共同研发出的NC6.3餐饮专版，开启了餐饮信息化技术整合构建，是全球首个将门店管理、后台总部、客户关系、供应链、财务等前端及后台全产业链相结合的信息化系统，并可实时链接互联网外部资讯，辰森世纪又一次被誉为行业技术创新的先行者。</p>
+        <p id="honour">
+            成立至今，辰森世纪一直不断地对产品进行提升、优化及改革创新，服务范围遍及中国乃至全球百余座城市、数千家餐饮企业。 辰森世纪始终坚持自身使命：为中国的餐饮企业跻身世界竞技平台，提供安全、稳健、科技创新的信息化解决方案，助力餐饮企业飞跃式发展！</p>
+    </div>
+</div>
+
+<div class="about-honour-box c-row s" id="H">
+    <h3 class="honour-title">企业荣誉</h3>
+    <div class="honour-content" data-aos="zoom-out" data-aos-once="true" data-aos-duration="700">
+        <p>♦ 中国饭店协会“中国连锁餐饮智能化第一品牌”</p>
+        <p>♦ 商务部餐饮饭店信息化标准规范主要起草单位</p>
+        <p>♦ 中国烹饪协会“中国餐饮业优秀管理软件”排名第一</p>
+        <p>♦ “呼叫中心和外送系统”获PC杂志“ 最佳结构设计奖”</p>
+        <p>♦ 国家信息中心（SERC）严格产品测试（ET20020908），辰森手持点菜系统软件质量评测结果“各项指标为优” </p>
+        <p>♦ 中国软件协会“中国优秀软件产品”称号的餐饮软件开发商</p>
+        <p>♦ “辰森手持点菜系统”被中国饭店协会授予“学术贡献奖”</p>
+        <p>♦ 辰森餐饮管理软件成为中华女子学院标准的软件培训教材。</p>
+        <p>♦ 呼叫中心和外送系统被“中美CIO峰会”评定为“2011信息化最佳IT项目”</p>
+        <p>♦ 中国饭店协会常务理事会员单位。</p>
+        <p>♦ 中国饭店协会“优秀合作伙伴”</p>
+        <p>♦ 辰森集团全面成本控制系统被“中美CIO峰会”评定为“2013年最佳IT项目实施奖”</p>
+        <p>♦ 中国饭店协会“2013中国饭店业信息化建设杰出贡献奖”</p>
+        <p id="milestone">♦ 中国饭店协会“2014大众化餐饮十佳服务商”</p>
+    </div>
+</div>
+
+<div class="about-milestone-box c-row" id="m">
+    <img src="imgs/about-milestone.png" alt="" class="milestone" data-aos="zoom-in" data-aos-once="true" data-aos-duration="900">
+</div>
+
+<div class="about-branch-box c-row s" id="B" data-aos="fade-top" data-aos-duration="700">
+    <h4 class="branch-title">全国分公司</h4>
+    <div class="t-wrap ">
+        <div class="t-head cf">
+            <div class="t1">城市/区域</div>
+            <div class="t2">电话</div>
+            <div class="t3">地址</div>
+        </div>
+        {{each branchLists}}
+        <div class="t-content cf">
+            <div class="t1">{{$value.w}}</div>
+            <div class="t2">{{$value.t}}</div>
+            <div class="t3">{{$value.a}}</div>
+        </div>
+        {{/each}}
+    </div>
+</div>

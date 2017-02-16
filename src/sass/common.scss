@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1471974737_1593666.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1471974737_1593666.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1471974737_1593666.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1471974737_1593666.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1471974737_1593666.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Vollkorn', 'Courier New', serif;
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #333;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background: #333;
+    color: #fff;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translate3d(90%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0%, 0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(0,0,0,0);
+    }
+    100% {
+        background: rgba(32, 74, 106, .7);
+    }
+}
+

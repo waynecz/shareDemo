@@ -1,0 +1,49 @@
+<!-- leave a message-->
+<div id="msgBox" class="index-message-box">
+    <h1 class="bg-chensen" id="M">Choicesoft</h1>
+    <h3 class="message-title">辰森邀请您亲身体验信息智能化</h3>
+    <a href="/about" class="message-button ts-15">了解我们</a>
+</div>
+
+<!-- foot-->
+<footer class="foot-box mb-hide">
+    <ul class="c-row foot-list cf">
+        <li class="foot-item fl">
+            <div class="wrapper sub-contact">
+                <a href="/" class="logo">
+                    <img src="imgs/logo.png" alt="" class="l">
+                </a>
+                <p class="wechat">
+                    <i class="iconfont">&#xe601</i> 微信
+                </p>
+                <p class="tel">010 8975-2590 /91 /92 /94 /95</p>
+                <p class="address">
+                    北京 宁波 上海 济南
+                </p>
+                <p class="address">
+                    南京 广州 重庆 武汉
+                </p>
+            </div>
+        </li>
+        {{each footLists}}
+        <li class="foot-item fl">
+            <div class="wrapper">
+                <h3 class="foot-item-title">{{$value.title}}</h3>
+                <ul class="sub-list">
+                    {{each $value.subList}}
+                    <li class="sub-content"><a href="{{$value.href}}" class="a">{{$value.content}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</footer>
+<div class="copyright">
+    版权/商标 | 法律声明 Tel: （+86-010）87952590 E-mail: <a class="cm" href="mailto:sales@choicesoft.com.cn">sales@choicesoft.com.cn</a>
+    版权所有 未经许可不得转载 京ICP备05002582号
+</div>
+
+<div class="back-to-top" id="backToTop">
+    <i class="iconfont">&#xe60a;</i>
+</div>

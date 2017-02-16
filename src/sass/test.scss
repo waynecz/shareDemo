@@ -1,0 +1,515 @@
+
+section {
+    position: relative;
+    display: block;
+    height: 25vh;
+    cursor: pointer;
+
+    &.a {
+        background-color: $q;
+    }
+    &.b {
+        background-color: $w;
+    }
+    &.c {
+        background-color: $e;
+    }
+    &.d {
+        background-color: $r;
+    }
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    h2 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 5vw;
+        margin: auto;
+
+        font-size: 60px;
+        height: 10vh;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+        transition: text-indent .06s ease-out;
+    }
+
+    &:hover {
+        z-index: 2;
+        box-shadow: 0 0 0 1920px rgba(0, 0, 0, .8);
+        h2 {
+            text-indent: 2vw;
+        }
+    }
+}
+.sec {
+    box-sizing: border-box;
+    height: 100vh;
+    border: 10px solid black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h2 {
+        padding-top: 5vh;
+        flex: 1 0 100vw;
+        color: #fff;
+
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+        -webkit-text-stroke: 1px #333;
+    }
+    p {
+        flex: 0 1 auto;
+        height: 10vw;
+        margin: 6vw;
+        width: 10vw;
+        background: #fff;
+    }
+    .box-box {
+        box-shadow: 0 0 10px black;
+    }
+    .drop-box {
+        filter: drop-shadow(0 0 10px black);
+    }
+    .a {
+        border: 10px dashed #64e8ee;
+        background: transparent;
+    }
+    .b {
+        border: 10px dashed #64e8ee;
+        background: transparent;
+    }
+    .c, .d {
+        width: 30vw;
+        margin: 0;
+        background: transparent url(../imgs/ow.png) no-repeat center;
+        background-size: auto 100%;
+    }
+    .c {
+        filter: drop-shadow(2px 2px 4px black);
+    }
+    .d {
+        box-shadow: 0 0 10px black;
+    }
+    .e {
+        position: relative;
+        display: inline-block;
+        width: 20vw;
+        height: 10vw;
+        background: #fff;
+        box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .2);
+        &:before {
+            content: '';
+            position: absolute;
+            overflow: hidden;
+            top: -1vw;
+            left: 10%;
+            width: 0;
+            height: 0;
+            border: 1vw solid transparent;
+            border-bottom-color: #fff;
+            border-bottom-width: 1vw;
+            border-top-width: 0;
+            box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, .2);
+        }
+    }
+    .f {
+        position: relative;
+        display: inline-block;
+        width: 20vw;
+        height: 10vw;
+        background: #fff;
+        filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, .3));
+        &:before {
+            content: '';
+            position: absolute;
+            overflow: hidden;
+            top: -2.15vw;
+            left: 10%;
+            width: 0;
+            height: 0;
+            border: 1vw solid transparent;
+            border-bottom-color: #fff;
+            border-bottom-width: 1.2vw;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, .2));
+        }
+    }
+    .g {
+        position: relative;
+        width: 196px;
+        height: 80px;
+        background: transparent;
+        overflow: hidden;
+
+        .icon {
+            width: 196px;
+            height: 80px;
+            position: absolute;
+            left: -196px;
+            border-right: 196px solid transparent;
+            background: transparent url(../imgs/yunpian.png) no-repeat center;
+            filter: drop-shadow(196px 0 black);
+        }
+    }
+    #pick {
+        background: transparent;
+        font-size: 20px;
+        font-weight: 600;
+        width: 200px;
+        border: 5px solid #333;
+        cursor: pointer;
+        text-align: center;
+        color: #333;
+        box-sizing: border-box;
+        height: 60px;
+        line-height: 50px;
+        font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial, "\5B8B\4F53";
+        &:hover {
+            color: $q;
+            background: #333;
+        }
+    }
+}
+
+.drop {
+    background: $q;
+}
+
+.writing {
+    background: $w;
+}
+
+.pseudo {
+    background: $e;
+}
+
+.parallax {
+    //background: $r;
+}
+
+.writing {
+    b {
+        margin: 5vw;
+        line-height: 2;
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+    .wm {
+        h4 {
+            font-size: 35px;
+            font-weight: 600;
+        }
+    }
+    .vrl {
+        writing-mode: vertical-rl;
+    }
+    .vlr {
+        writing-mode: vertical-lr;
+    }
+    .IEWM {
+        width: 616px;
+        height: 259px;
+    }
+    .mgcd {
+        width: 50vw;
+        height: 20vh;
+        background: #fff;
+        box-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);;
+    }
+    span.m20 {
+        display: block;
+        width: 5vw;
+        height: 10vh;
+        background: #fff;
+        margin: auto 20px;
+        box-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+    }
+    .test {
+        width: 5vw;
+        margin: auto 20px;
+        box-shadow: 0 1px 0 #ccc,
+        0 2px 0 #c9c9c9,
+        0 3px 0 #bbb,
+        0 4px 0 #b9b9b9,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+    }
+    .test2 {
+        display: inline-block;
+    }
+    .tac {
+        text-align: center;
+    }
+}
+
+.pseudo {
+    .btn {
+        position: relative;
+        width: 10vw;
+        height: 10vh;
+        border: 0 none;
+        background: $q;
+        border-radius: 4px;
+        color: $e;
+        cursor: pointer;
+        box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+        &:active, &:focus {
+            outline: none;
+            border: 0 none;
+            font-size: 16px;
+            box-shadow: 0 0 7px black;
+            transform: translateY(4px);
+        }
+    }
+    .cgbg {
+        &:after {
+            //content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, .12);
+        }
+        &:before {
+            //content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, .2);
+        }
+
+        &:hover {
+            &:before {
+                content: '';
+            }
+        }
+        &:active {
+            &:after {
+                content: '';
+            }
+        }
+    }
+    .br {
+        &:after {
+            content: '\A';
+            white-space: pre;
+        }
+    }
+    .ex {
+        &:before {
+            content: 'Not hover';
+            padding: 4.5vh;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: -90px;
+            right: -90px;
+            top: -90px;
+            bottom: -90px;
+        }
+        &:hover {
+            &:before {
+                content: 'Hovered';
+            }
+        }
+    }
+    .tool-tip {
+        &:after {
+            position: absolute;
+            border: 1vh solid transparent;
+            border-top-color: #fff;
+            left: 3vw;
+            top: -2.5vh;
+            filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, .3));
+            overflow: hidden;
+        }
+        &:before {
+            position: absolute;
+            top: -8vh;
+            left: 0;
+            width: 10vw;
+            height: 5.5vh;
+            padding-top: 1.9vh;
+            box-sizing: border-box;
+            background: #fff;
+            border-radius: 4px;
+            filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, .3));
+        }
+        &:hover {
+            &:before {
+                content: attr(data-hover);
+            }
+            &:after {
+                content: '';
+            }
+        }
+        &:active {
+            &:before {
+                content: attr(data-active);
+            }
+            &:after {
+                content: '';
+            }
+        }
+    }
+
+    span {
+        font-size: 30px;
+        line-height: 1.8;
+        color: #fff;
+    }
+}
+
+.parallax {
+    .stage1 {
+        perspective: 1px;
+        overflow: auto;
+        height: 150vh;
+        .box1 {
+            position: relative;
+            transform-style: preserve-3d;
+            height: 300vh;
+            z-index: 1;
+        }
+        .i3 {
+            position: absolute;
+            left: 50%;
+            width: 45vw;
+            top: -30vh;
+            transform: translate3d(-50%,0,-1.5px) scale(2.5);
+        }
+        .i4 {
+            position: absolute;
+            left: 50%;
+            top: 5vh;
+            height: 110vh;
+            transform: translate3d(-50%,0,-1px) scale(2);
+        }
+        .i5 {
+            position: absolute;
+            left: 50%;
+            width: 60vw;
+            top: 60vh;
+            transform: translate3d(-50%,0, 0);
+        }
+        .i6 {
+            position: absolute;
+            left: 50%;
+            width: 50vw;
+            top: 100vh;
+            transform: translate3d(-50%,0,-3px) scale(4);
+        }
+
+    }
+
+    .stage2 {
+        perspective: 1px;
+        overflow: auto;
+        height: 100vh;
+        background: $r;
+        .box2 {
+            position: relative;
+            transform-style: preserve-3d;
+            z-index: 1;
+            height: 150vh;
+        }
+        .i1 {
+            position: absolute;
+            width: 100vw;
+            transform: translate3d(0,0,-3px) scale(4);
+        }
+        .i2 {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 50%;
+            width: 70vw;
+            display: block;
+            margin: 0 auto;
+            transform: translate3d(-50%, 60%, -2px) scale(3);
+        }
+    }
+
+
+
+}
+
+.back {
+    background: transparent;
+    font-size: 40px;
+    font-weight: 600;
+    width: 400px;
+    border: 8px solid #333;
+    cursor: pointer;
+    text-align: center;
+    color: #333;
+    box-sizing: border-box;
+    height: 120px;
+    line-height: 100px;
+    margin-top: 40vh;
+    text-decoration: none;
+    font-family: "\5FAE\8F6F\96C5\9ED1", "Microsoft Yahei", "Hiragino Sans GB", tahoma, arial, "\5B8B\4F53";
+    transition: .3s ease-out;
+    box-shadow: 0 0 0 1920px transparent;
+    &:hover {
+        color: #fff;
+        background: #333;
+        box-shadow: 0 0 0 1920px #333;
+    }
+}

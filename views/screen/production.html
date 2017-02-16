@@ -1,0 +1,23 @@
+<span id="PG" data-pg="production"></span>
+<div class="production-banner-box">
+    <div class="c-row title-wrap">
+        <h1 class="producton-title">让餐饮管理变得更简单</h1>
+        <h3 class="sub-producton-title">辰森诺果云系统</h3>
+        <p class="sub-title-intro">随时随地可用的餐饮ERP平台</p>
+    </div>
+</div>
+<div class="production-content-box c-row">
+    <h2 class="content-title">产品服务</h2>
+    <ul class="production-table">
+        {{each productionLists}}
+        <li class="pruduction cf" id="{{$index+1}}">
+            <div class="name n-{{$index + 1}}">{{$value.n}}</div>
+            <div class="detail">
+                {{each $value.d}}
+                <p class="detail-content">{{$value}}</p>
+                {{/each}}
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

@@ -1,0 +1,106 @@
+$q: #fdee44;
+$w: #00ffc6;
+$e: #ef5453;
+$r: #00aaf3;
+
+$bar-width: r(57);
+$bar-height: r(7);
+$bar-spacing: r(17);
+
+
+.cf {
+  *zoom: 1;
+  &:after {
+    content: '\200B';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+}
+
+//hide
+
+.shadow {
+  display: none !important;
+}
+
+.pc-hide {
+  @include res('p') {
+    display: none !important;
+  }
+}
+
+.mb-hide {
+  @include res('m') {
+    display: none !important;
+  }
+}
+
+// inline unit align middle
+.inb-tac {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//display
+.d-ib {
+  display: inline-block;
+}
+
+.d-i {
+  display: inline !important;
+}
+
+.d-b {
+  display: block;
+}
+
+// vertical-align
+.v-m {
+  vertical-align: middle;
+}
+.v-t {
+  vertical-align: top;
+}
+
+// text-align
+.ta-c {
+  text-align: center;
+}
+
+// margin
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-n7 {
+  margin-left: -7px;
+}
+
+// position
+.p-r {
+  position: relative;
+}
+
+// float
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+// transition
+.ts-15 {
+  transition: .15s ease-out;
+}
+// huanhang
+@mixin hh {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// ts
+@mixin ts {
+  transition: .2s ease-out;
+}

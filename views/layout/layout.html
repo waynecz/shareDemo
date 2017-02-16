@@ -1,0 +1,29 @@
+{{include '../control/meta'}}
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:700" rel="stylesheet">
+<body>
+{{#ctx}}
+</body>
+<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/colpick.js"></script>
+<script>
+    $(function () {
+
+        $('#pick').length && $('#pick').colpick({
+                    onChange: function (e, i, u) {
+                        var drop = 'drop-shadow(196px 0 #' + i + ')';
+                        $('.jsIcon').css({'webkitFilter': drop, 'filter': drop})
+                    },
+                    onSubmit: function (e, i, u) {
+                        var drop = 'drop-shadow(196px 0 #' + i + ')';
+                        $('.jsIcon').css({'webkitFilter': drop, 'filter': drop})
+                    }
+                }
+        );
+        $(window).on('keyup', function (e) {
+            if (e.keyCode == 66) {
+                window.location.replace('/')
+            }
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,64 @@
+<span id="PG" data-pg="solution"></span>
+<div class="solution-banner-box">
+    <div class="c-row">
+        <img class="banner-img" src="./imgs/solution_banner.jpg" alt="解决方案">
+    </div>
+</div>
+<div id="SSB" class="solution-subnav-box">
+    <div class="wrap">
+        <div class="c-row cf p-r">
+            <div class="subnav-unit"><a href="/solution#s">单店小型连锁</a></div>
+            <div class="subnav-unit"><a href="/solution#m">中型连锁</a></div>
+            <div class="subnav-unit"><a href="/solution#l">大型连锁</a></div>
+            <div class="hr l1"></div>
+        </div>
+    </div>
+</div>
+<div class="solution-industry-box s" id="s">
+    <div class="c-row">
+        <div class="card-wrap cf">
+            {{each smallLists}}
+            <div class="solution-card card-{{$index + 1}}" data-aos="flip-left" data-aos-once="true" data-aos-delay="{{($index+1)*100}}" data-aos-duration="700">
+                <div class="card-title">{{$value.title}}</div>
+                <ul class="card-list">
+                    {{each $value.list}}
+                    <li class="s">{{$value}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<div class="solution-industry-box m" id="m">
+    <div class="c-row">
+        <div class="card-wrap cf">
+            {{each middleLists}}
+            <div class="solution-card card-{{$index + 4}}"  data-aos="flip-right" data-aos-once="true" data-aos-delay="{{($index+1)*100}}" data-aos-duration="700">
+                <div class="card-title">{{$value.title}}</div>
+                <ul class="card-list cf">
+                    {{each $value.list}}
+                    <li class="s">{{$value}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+<div class="solution-industry-box l" id="l">
+    <div class="c-row">
+        <div class="card-wrap cf">
+            {{each largeLists}}
+            <div class="solution-card d card-{{$index + 7}}" data-aos="flip-left" data-aos-once="true" data-aos-delay="{{($index+1)*100}}" data-aos-duration="700">
+                <div class="card-title">{{$value.title}}</div>
+                <ul class="card-list cf d">
+                    {{each $value.list}}
+                    <li class="s d">{{$value}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
