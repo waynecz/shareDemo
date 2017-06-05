@@ -16,7 +16,6 @@ module.exports = function (req, res, next) {
                 return res.send("找不到" + screenPath);
             }
             data.ctx = template(screenPath, data);
-            _.assign(data, require('../data/pageData/head_foot'));
             return res.render(layoutPath, data);
         });
     };
